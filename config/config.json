@@ -1,0 +1,15 @@
+{
+	"build_path": "/Users/geoff/Temp/oswebfont_build",
+	"copy_to_path": "/var/www/oswebfont",
+	"gen_preview": true,
+	"gen_preview_string": "the quick brown fox jumped over the lazy dog.\nTHE QUICK BROWN FOX JUMPED OVER THE LAZY DOG.\n01234567890\n` - = [ ] \\ ; ' , . / ~ ! @ # $ % ^ & * ( ) _ + { } | : \" < > ?",
+	"gen_disclamer": "Test",
+	"gen_domain": "fonts.eleboards.com",
+	"build_content_rating": ["G", "Explicit"],
+	"build_content_type": ["Serif", "Sans-Serif", "Non-Text"],
+	"exclude_licence_containing": [],
+	"other_font_locations": [],
+	"whitelist": [],
+	"blacklist": [],
+	"analyse": [[true, 10], [true, 50]]
+}
