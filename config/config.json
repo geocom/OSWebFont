@@ -1,7 +1,6 @@
 {
 	"build_path": "/home/geoff/OSFont/build",
 	"copy_to_path": "/var/www/oswebfont",
-	"gen_preview": true,
 	"gen_preview_string": "the quick brown fox jumped over the lazy dog.\nTHE QUICK BROWN FOX JUMPED OVER THE LAZY DOG.\n01234567890\n` - = [ ] \\ ; ' , . / ~ ! @ # $ % ^ & * ( ) _ + { } | : \" < > ?",
 	"gen_disclamer": "Geo Com Ltd and Eleboards have made every attempt to make sure that all scripts included in this repo are opensource and allow for there inclusion in this repo if you beleve that a scripts licence has been broken by inclusion please submit a Issue on the GitHub issues page and we will attempt to resolve any issues.<br /> For a more information about a scripts Licence please view the scripts page by clicking on the scripts link above.</p><p>If you find any of the scripts above useful please consider donating to the scripts developer. This could be by providing funding or it could just be giving some of your time to make the project even better. :)",
 	"gen_domain": "fonts.eleboards.com",

@@ -59,15 +59,13 @@ fonts.each do |font|
 					if File.exists?("#{config["build_path"]}/builds/assets/#{font}") == false
 						`mkdir #{config["build_path"]}/builds/assets/#{font}`
 					end
-					if config["gen_preview"] == true
-						svg_text_normal = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: false, italic: false)
-						svg_text_bold = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: true, italic: false)
-						svg_text_italic = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: false, italic: true)
+					svg_text_normal = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: false, italic: false)
+					svg_text_bold = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: true, italic: false)
+					svg_text_italic = Text2svg(config["gen_preview_string"], font: "#{Dir.pwd}/fonts/#{font}/#{font_info["font_file"]}", text_align: :left, bold: false, italic: true)
 
-						File.open("#{config["build_path"]}/builds/assets/#{font}/normal.svg", 'w') { |file| file.write("#{svg_text_normal}")}
-						File.open("#{config["build_path"]}/builds/assets/#{font}/bold.svg", 'w') { |file| file.write("#{svg_text_bold}")}
-						File.open("#{config["build_path"]}/builds/assets/#{font}/italic.svg", 'w') { |file| file.write("#{svg_text_italic}")}
-					end
+					File.open("#{config["build_path"]}/builds/assets/#{font}/normal.svg", 'w') { |file| file.write("#{svg_text_normal}")}
+					File.open("#{config["build_path"]}/builds/assets/#{font}/bold.svg", 'w') { |file| file.write("#{svg_text_bold}")}
+					File.open("#{config["build_path"]}/builds/assets/#{font}/italic.svg", 'w') { |file| file.write("#{svg_text_italic}")}
 					if config["analyse"][0] == true
 						##Volume Analysis
 						totals = []
