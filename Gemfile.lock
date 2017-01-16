@@ -5,6 +5,7 @@ GEM
     ffi (1.9.14)
     freetype (0.0.6)
       ffi
+    kramdown (1.13.2)
     text2svg (0.5.1)
       freetype (>= 0.0.6)
 
@@ -13,7 +14,8 @@ PLATFORMS
 
 DEPENDENCIES
   chunky_png
+  kramdown
   text2svg
 
 BUNDLED WITH
-   1.11.2
+   1.13.7
